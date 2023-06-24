@@ -1,0 +1,37 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Label-Placement</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list>
+    <ion-item>
+      <ion-input label="Label por defecto" placeholder="Ingrese Texto"></ion-input>
+    </ion-item>
+ 
+  
+    <ion-item>
+      <ion-input label="Label Flotante" labelPlacement="floating" placeholder="Enter text"></ion-input>
+    </ion-item>
+  </ion-list>
+  -----------------------------------
+  <ion-list>
+    <ion-item>
+      <ion-input labelPlacement="floating" value="ruben.arroyog@ug.edu.ec">
+        <div slot="label">Email <ion-text color="danger">(Requerido)</ion-text></div>
+      </ion-input>
+    </ion-item>
+  </ion-list>
+  -----------------------------------
+  <ion-list>
+    <ion-item>
+      <ion-input aria-label="Email" value="ruben.arroyog@ug.edu.ec"></ion-input>
+    </ion-item>
+  </ion-list>
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Label-Placement</ion-title>
+    </ion-toolbar>
+  </ion-header>
+</ion-content>
